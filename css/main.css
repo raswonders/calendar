@@ -261,3 +261,27 @@ textarea {
   }
 }
 
+#calendarBox {
+  font-size: 1em;
+  width: 233px;
+  height: fit-content;
+  margin: 10px auto;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#dateMonth {
+  font-size: 1.2em;
+}
+
+#dateDay {
+  font-size: 3em;
+}
+
+#dateWeek {
+  font-size: 1.2em;
+}
+
+#namesDay {
+  font-size: 1.2em;
+}
