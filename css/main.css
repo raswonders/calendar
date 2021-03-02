@@ -180,9 +180,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -261,27 +261,77 @@ textarea {
   }
 }
 
+.center {
+  width: 90%;
+  left: 5%;
+}
+
 #calendarBox {
-  font-size: 1em;
+  position: relative;
   width: 233px;
-  height: fit-content;
-  margin: 10px auto;
-  border: 1px solid black;
+  height: 311px;
+  margin: 32px auto;
+
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
   text-align: center;
 }
 
 #dateMonth {
-  font-size: 1.2em;
+  position: absolute;
+  height: 10%;
+  top: 2%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 18px;
+  color: #000000;
 }
 
 #dateDay {
-  font-size: 3em;
+  position: absolute;
+  height: 10%;
+  top: 30%;
+  font-size: 161px;
+  line-height: 18px;
 }
 
 #dateWeek {
-  font-size: 1.2em;
+  position: absolute;
+  height: 10%;
+  top: 60%;
+  font-size: 30px;
+  line-height: 18px;
+}
+
+#dateLine {
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  height: 0px;
+  top: 70%;
+  border: 1px solid #000000;
 }
 
 #namesDay {
-  font-size: 1.2em;
+  position: absolute;
+  height: 10%;
+  top: 74%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 18px;
+}
+
+#triangle {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
 }
