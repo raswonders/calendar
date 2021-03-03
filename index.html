@@ -21,22 +21,22 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body onload="main()">
+<body onload="updateCalendar(today)">
 <div id="calendarBox">
   <div id="dateMonth" class="center"></div>
   <div id="dateDay" class="center"></div>
   <div id="dateWeek" class="center"></div>
   <div id="dateLine"></div>
   <div id="namesDay" class="center"></div>
-  <a class="triangleBox" href="#" onclick="calendarUpdate()">
+  <a class="triangleBox" href="#" onclick="nextDay(today); updateCalendar(today)">
     <img class="triangleFront" src="img/triangle.svg">
     <img class="triangleBack" src="img/triangle-black.svg">
   </a>
 </div>
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
 <script src="js/calendar.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
