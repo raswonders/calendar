@@ -273,7 +273,7 @@ textarea {
   margin: 32px auto;
 
   background: #FFFFFF;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -326,10 +326,25 @@ textarea {
   line-height: 18px;
 }
 
-#triangle {
+.triangleBox {
   width: 25px;
   height: 25px;
   position: absolute;
   bottom: 2px;
   right: 2px;
+}
+
+.triangleFront, .triangleBack {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.triangleBox .triangleBack {
+  display: none;
+}
+
+.triangleBox:hover .triangleBack {
+  display: block;
+  z-index: 99;
 }
